@@ -1,178 +1,199 @@
-🚑 PulseLink – Real-Time Blood Donor Matching System
+# 🚑 PulseLink – Real-Time Blood Donor Matching System
 
-A full-stack MERN application that connects blood seekers with nearby eligible donors using geo-based search, real-time notifications, and emergency SOS alerts.
+> A full-stack MERN application that connects blood seekers with nearby eligible donors using geo-based search, real-time notifications, and emergency SOS alerts.
 
-🌍 Live Demo
+---
 
-🚀 Frontend: Coming Soon
-🔗 Backend API: Coming Soon
+## 🌍 Live Demo
 
-⚠️ Demo credentials will be provided after deployment.
+🚀 **Frontend:** *Coming Soon*
+🔗 **Backend API:** *Coming Soon*
 
-📌 Overview
+> ⚠️ Demo credentials will be provided after deployment.
+
+---
+
+## 📌 Overview
 
 PulseLink is a real-time emergency blood coordination platform designed to reduce response time during critical situations.
 
 The system enables:
 
-🔍 Geo-radius based donor search
+* 🔍 Geo-radius based donor search
+* 🚨 Emergency SOS request (extended search radius)
+* 🔔 Real-time donor response notifications (Socket.io)
+* 📧 Automated email alerts
+* 📍 Distance calculation between donor and seeker
+* 🔒 Secure JWT-based authentication
 
-🚨 Emergency SOS request (extended search radius)
+---
 
-🔔 Real-time donor response notifications (Socket.io)
+## 🛠 Tech Stack
 
-📧 Automated email alerts
+### Frontend
 
-📍 Distance calculation between donor and seeker
+* React.js
+* Axios
+* React Router
+* Context API
+* Socket.io Client
 
-🔒 Secure JWT-based authentication
+### Backend
 
-🛠 Tech Stack
-Frontend
+* Node.js
+* Express.js
+* MongoDB (GeoSpatial Queries)
+* Mongoose
+* Socket.io
+* Nodemailer
+* JWT Authentication
 
-React.js
+---
 
-Axios
+## ⚡ Key Features
 
-React Router
+### 1️⃣ Geo-Based Donor Matching
 
-Context API
+* Uses MongoDB `$near` query
+* Filters by blood group
+* Checks donor availability & eligibility
+* Radius changes based on urgency
 
-Socket.io Client
+---
 
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB (GeoSpatial Queries)
-
-Mongoose
-
-Socket.io
-
-Nodemailer
-
-JWT Authentication
-
-⚡ Key Features
-1️⃣ Geo-Based Donor Matching
-
-Uses MongoDB $near query
-
-Filters by blood group
-
-Checks donor availability & eligibility
-
-Radius changes based on urgency
-
-2️⃣ Real-Time Donor Response
+### 2️⃣ Real-Time Donor Response
 
 When a donor accepts a request:
 
-Request is atomically updated (prevents double acceptance)
-
-Email sent to seeker
-
-In-app notification created
-
-Real-time socket event emitted to seeker
+* Request is atomically updated (prevents double acceptance)
+* Email sent to seeker
+* In-app notification created
+* Real-time socket event emitted to seeker
 
 No page refresh required.
 
-3️⃣ SOS Mode (High Urgency)
+---
 
-Extends search radius up to 75km
+### 3️⃣ SOS Mode (High Urgency)
 
-Sends emergency email alerts
+* Extends search radius up to 75km
+* Sends emergency email alerts
+* Notifies only nearby eligible donors
 
-Notifies only nearby eligible donors
+---
 
-4️⃣ Safety Mechanisms
+### 4️⃣ Safety Mechanisms
 
-Prevents multiple active requests per seeker
+* Prevents multiple active requests per seeker
+* Prevents multiple donors accepting same request
+* Availability-based filtering
+* Secure route protection
 
-Prevents multiple donors accepting same request
+---
 
-Availability-based filtering
+## 📸 Screenshots
 
-Secure route protection
+> Add your screenshots inside a `/screenshots` folder.
 
-📸 Screenshots
+### 🏠 Seeker Dashboard
 
-Add your screenshots inside a /screenshots folder.
-
-🏠 Seeker Dashboard
+```
 ![Seeker Dashboard](./screenshots/seeker-dashboard.png)
-🩸 Nearby Requests (Donor View)
+```
+
+### 🩸 Nearby Requests (Donor View)
+
+```
 ![Donor View](./screenshots/donor-view.png)
-🚑 Donor On The Way Notification
+```
+
+### 🚑 Donor On The Way Notification
+
+```
 ![Notification](./screenshots/notification.png)
+```
 
 After adding images, remove the triple backticks.
 
-🧪 How To Run Locally
-1️⃣ Clone Repository
+---
+
+## 🧪 How To Run Locally
+
+### 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/Raghunandan-git/PulseLink-Blood-Donor-System.git
 cd PulseLink-Blood-Donor-System
-2️⃣ Backend Setup
+```
+
+---
+
+### 2️⃣ Backend Setup
+
+```bash
 cd backend
 npm install
+```
 
-Create .env file:
+Create `.env` file:
 
+```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 CLIENT_URL=http://localhost:5173
 EMAIL_USER=your_email
 EMAIL_PASS=your_email_password
+```
 
 Start backend:
 
+```bash
 npm run dev
-3️⃣ Frontend Setup
+```
+
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
-🧠 System Architecture
+```
 
-REST API for data operations
+---
 
-MongoDB GeoSpatial indexing for location search
+## 🧠 System Architecture
 
-Socket.io for real-time communication
+* REST API for data operations
+* MongoDB GeoSpatial indexing for location search
+* Socket.io for real-time communication
+* Email service for off-platform notification
+* JWT middleware for authentication
 
-Email service for off-platform notification
+---
 
-JWT middleware for authentication
+## 🚀 Future Improvements
 
-🚀 Future Improvements
+* Live donor tracking with map integration
+* Token expiry + refresh mechanism
+* Background job queue for email processing
+* Premium notification UI
+* Deployment with CI/CD pipeline
 
-Live donor tracking with map integration
+---
 
-Token expiry + refresh mechanism
+## 📈 Why This Project Stands Out
 
-Background job queue for email processing
+* Real-world emergency use case
+* Real-time system implementation
+* Geo-location database queries
+* Clean separation of frontend & backend
+* Scalable architecture foundation
 
-Premium notification UI
+---
 
-Deployment with CI/CD pipeline
+## 👨‍💻 Author
 
-📈 Why This Project Stands Out
-
-Real-world emergency use case
-
-Real-time system implementation
-
-Geo-location database queries
-
-Clean separation of frontend & backend
-
-Scalable architecture foundation
-
-👨‍💻 Author
-
-Raghunandan P
-Full Stack Developer
+**Raghunandan P**
