@@ -4,14 +4,7 @@
 
 ---
 
-## 🌍 Live Demo
 
-🚀 **Frontend:** *Coming Soon*
-🔗 **Backend API:** *Coming Soon*
-
-> ⚠️ Demo credentials will be provided after deployment.
-
----
 
 ## 📌 Overview
 
@@ -93,27 +86,26 @@ No page refresh required.
 
 ## 📸 Screenshots
 
-> Add your screenshots inside a `/screenshots` folder.
+### Home
+
+<img width="1588" height="4170" alt="localhost_5173_ (1)" src="https://github.com/user-attachments/assets/1fbdd282-9d83-490d-8aea-de6094e796c3" />
+
+### Signup
+<img width="1588" height="1700" alt="localhost_5173_ (2)" src="https://github.com/user-attachments/assets/b2df8242-e491-448d-89a3-ba30fbba18f3" />
+
+### Login
+
+<img width="1588" height="1550" alt="localhost_5173_ (4)" src="https://github.com/user-attachments/assets/cc35392d-5b5d-476b-9173-da59fda67f3a" />
+
+### 🩸Donor Dashboard
+
+<img width="1588" height="2214" alt="localhost_5173_donor_dashboard" src="https://github.com/user-attachments/assets/6db0180d-4299-40e1-8abd-fa3f88fef1be" />
+<img width="1764" height="2354" alt="localhost_5173_donor_dashboard (1)" src="https://github.com/user-attachments/assets/8ab282b2-0512-4d9b-83d7-11d8fe41baa6" />
+
 
 ### 🏠 Seeker Dashboard
+<img width="1764" height="1650" alt="localhost_5173_donor_dashboard (2)" src="https://github.com/user-attachments/assets/7b6554d7-a70d-40cb-924d-fe278311493c" />
 
-```
-![Seeker Dashboard](./screenshots/seeker-dashboard.png)
-```
-
-### 🩸 Nearby Requests (Donor View)
-
-```
-![Donor View](./screenshots/donor-view.png)
-```
-
-### 🚑 Donor On The Way Notification
-
-```
-![Notification](./screenshots/notification.png)
-```
-
-After adding images, remove the triple backticks.
 
 ---
 
